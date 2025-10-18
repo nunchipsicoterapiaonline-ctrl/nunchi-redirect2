@@ -12,10 +12,23 @@
       text-align: center;
       padding: 10vh 5%;
       margin: 0;
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     img {
       width: 120px;
       margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeInLogo 2s ease-in forwards;
+      animation-delay: 0.3s;
+    }
+    @keyframes fadeInLogo {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
     }
     h1 {
       color: #027373;
@@ -37,21 +50,6 @@
       font-size: 1rem;
       margin-bottom: 0.3rem;
     }
-    a {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 12px 24px;
-      background-color: #027373;
-      color: #F1E6DB;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-    a:hover {
-      background-color: #025b5c;
-      transform: scale(1.03);
-    }
   </style>
 </head>
 <body>
@@ -68,8 +66,5 @@
     <li>📱 WhatsApp: <strong>+56 9 6428 8257</strong></li>
     <li>📧 Correo: <strong>contactosomosnunchi@gmail.com</strong></li>
   </ul>
-
-  <a href="https://www.somosnunchi.cl">Volver al sitio web</a>
 </body>
 </html>
-
